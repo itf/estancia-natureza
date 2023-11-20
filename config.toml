@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://estancianatureza.com"
 languageCode = "pt-br"
 title = "Estância Natureza"
 #theme = "hugo-creative-theme"
