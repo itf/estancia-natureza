@@ -1,0 +1,31 @@
+{{$global := .global}}
+{{with .quarto}}
+<div class="portfolio-modal modal fade" id="quarto-{{ .modalID }}" tabindex="-1" role="dialog">
+  <div class="modal-content" tabindex="0">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+	  <div class="modal-body">
+	    <h2>{{ .title }}</h2>
+	    <hr class="star-primary">
+	    <div class="gallery-photo">
+	      <a href="img/portfolio/{{ .img }}" class="image">
+                <img data-src="img/portfolio/{{ .img }}" class="img-responsive lazyload centered" alt="">
+	      </a>
+	     {{with .description}} <p>{{ . | markdownify }}</p>{{end}}
+	     {{ partial "gallery.html" .}}              
+              <p class="text-center"><button type="button" class="btn btn-default btn-close" data-dismiss="modal"><i class="fa fa-times"></i> {{ with $.Site.Params.portfolio.modal.buttonText }}{{.}}{{ end }}</button></p>
+            </div>
+          </div>
+	</div>
+      </div>
+    </div>
+  </div>
+</div> 
+{{end}}

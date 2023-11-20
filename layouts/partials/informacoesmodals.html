@@ -1,0 +1,31 @@
+{{ "<!-- Informacoes Modals -->" | safeHTML }}
+<div class="informacoes-modal modal fade" id="informacoes_" tabindex="-1" role="dialog">
+  <div class="modal-content" tabindex="0">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-sm-12">
+	  <div class="modal-body">
+	    <h2>{{ with .Site.Params.informacoes.informacao_session }}{{ . }}{{ end }}</h2>
+	    <hr>
+	    {{ range $index, $element :=  $.Site.Data.informacoes.informacoes }}
+	    {{ $element | markdownify}}
+	    {{ end }}
+	      
+	    </div>
+            <hr class="star-primary">
+            <p class="text-center"><button type="button" class="btn btn-default btn-close" data-dismiss="modal"><i class="fa fa-times"></i> {{ with $.Site.Params.portfolio.modal.buttonText }}{{.}}{{ end }}</button></p>
+          </div>
+	</div>
+      </div>
+    </div>
+  </div>
+</div> 
+<!-- Button trigger modal -->
+
+

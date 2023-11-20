@@ -1,0 +1,30 @@
+{{ "<!-- CONTACT -->" | safeHTML }}
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">{{ with .Site.Params.contact.headline }}{{ . }}{{ end }}</h2>
+                <hr class="primary">
+               <!-- <p>{{ with .Site.Params.contact.description }}{{ . | markdownify }}{{ end }}</p> -->
+            </div>
+        </div>
+	<div class="row">
+<!--          <div class="col-lg-3 text-center">
+            <a href="tel:{{ with .Site.Params.contact.phone2 }}{{ . }}{{ end }}"> <i class="fa fa-phone fa-3x "></i></a>
+            <p><a href="tel:{{ with .Site.Params.contact.phone2 }}{{ . }}{{ end }}" class="contact">{{ with .Site.Params.contact.phone }}{{ . }}{{ end }}</a></p>
+          </div>
+         <div class="col-lg-3 text-center">
+            <a href="tel:{{ with .Site.Params.contact.mobile2 }}{{ . }}{{ end }}"> <i class="fa fa-mobile fa-3x "></i></a>
+            <p><a href="tel:{{ with .Site.Params.contact.mobile2 }}{{ . }}{{ end }}" class="contact">{{ with .Site.Params.contact.mobile }}{{ . }}{{ end }}</a></p>
+          </div> -->
+          <div class="col-lg-16 text-center">
+            <a class="contact" href="{{ with .Site.Params.contact.email }}{{ . }}{{ end }}"> <i class="fa my-fa-facebook  fa-3x"> </i>
+	      <p>{{ with .Site.Params.contact.email2 }}{{ . }}{{ end }}</p></a>
+	  </div>
+<!--	  <div class="col-lg-3 text-center">
+	    <a href="geo:{{ with .Site.Params.contact.addressLat}}{{ . }}{{ end }}"> <i class="fa fa-map-marker fa-3x" ></i> </a>
+	    <p><a class="contact"  href="geo:{{ with .Site.Params.contact.addressLat}}{{ . }}{{ end }}"> {{ with .Site.Params.contact.address }}{{ . | markdownify }}{{ end }}</a></p>
+-->	  </div>
+	</div>
+    </div>
+</section>

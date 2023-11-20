@@ -1,0 +1,73 @@
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
+    content: " \25B4\25BE" 
+}
+table.sortable thead {
+    background-color:#eee;
+    color:#262626;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media(max-width:389px){
+    table{
+        width:100%;
+    }
+    
+    th.quarto-nome{
+        display:block;
+    }
+
+    td.quarto-nome{
+        display:block;
+        width:100%;
+    }
+    
+    td{
+        width=100%;
+    }
+
+    tr.precos{
+        display:block;
+        margin-bottom:10px;
+    }
+}
+
+@media (min-width:390px) and (max-width:430px){
+    table{
+        font-size: 13px;
+    }
+
+}
+
+
+
+@media (max-width:351px) ,(min-width:389px) and (max-width:560px){
+    td span{
+        display:none;
+    }
+}
+
+.tooltip-button{
+  float:right; 
+  position:relative; 
+  font-size:1.2em; 
+  display:inline;
+}
+
+@media (max-width:315px){
+   .tooltip-button{
+      font-size:0.8em; 
+    }
+}
+
+@media (max-width:301px){
+    th .tooltip-button{
+        display:none;
+    }
+}
+
+th span.tooltiped{
+	 border-bottom: 1px dashed #999;
+ 	 position:relative; 
+  	display:inline;
+}

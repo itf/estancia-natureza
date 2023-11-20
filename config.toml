@@ -1,0 +1,122 @@
+baseurl = "/"
+languageCode = "pt-br"
+title = "Estância Natureza"
+theme = "hugo-creative-theme"
+
+[params]
+
+	# You can use Markdown syntax for urls [text](//url.to/source) for
+	# most longer texts.
+
+	# All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+	# for more icons. The icons are represented by their corresponding
+	# CSS class.
+
+	# All projects of the portfolio are defined in their own files.
+	# You can find example projects at 'exampleSite/data/projects'. Copy the 'projects'
+	# folder into the 'data' directory at the root of this Hugo site.
+	# For more informtion take a look at the README.
+
+	# To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+	name = "Estância Natureza"
+	description = "Fotos e informações da Estância Natureza - Lins. Área de soltura e monitoramento de pássaros. Papagaios, Tucanos, Araras. Bugius. Macacos Prego,  Paseios de barco, de trenzinho. Mata atlântica. Incrível!"
+
+	# The path must be relative to the static folder
+	favicon = "favicon.ico"
+
+
+	# Navigation
+	[params.navigation]
+		brand = "Estância Natureza"
+
+		[params.navigation.links]
+			about     = "Sobre"
+			portfolio = "Fotos e mais"
+			contact   = "Contato"
+			informacoes = "Informações"
+
+
+	# Hero section
+	[params.hero]
+		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
+		slogan     = "Estância Natureza"
+		subtitle   = ""
+		buttonText = ""
+
+
+	# About section
+	[params.about]
+		headline    = "Estância Natureza"
+		description = "A Estância Natureza de Lins, única área de soltura e monitoramento de animais silvestres em um raio de mais de 200km, recebe aves e animais das mais diversas regiões do estado para reintroduzir em nossa região. Área de soltura de pássaros com mata Atlântica reflorestada."
+		buttonText  = "Get started!"
+
+
+	# Service section
+	[params.services]
+		headline = "At your service"
+
+        [[params.services.list]]
+            icon = "fa-diamond"
+            title = "Sturdy Templates"
+            description = "Our templates are updated regularly so they don't break."
+
+        [[params.services.list]]
+			icon = "fa-paper-plane"
+			title = "Ready to Ship"
+			description = "You can use this theme as is, or you can make changes!"
+
+		[[params.services.list]]
+            icon = "fa-newspaper-o"
+            title = "Up to Date"
+            description = "We update dependencies to keep things fresh."
+
+        [[params.services.list]]
+            icon = "fa-heart"
+            title = "Made with Love"
+            description = "You have to make your websites with love these days!"
+
+
+    # Portfolio modals
+	[params.portfolio.modal]
+        client = "Client"
+        date = "Date"
+        category = "Category"
+        buttonText = ""
+
+    # Aside section
+	[params.aside]
+		headline = "Surpreeenda-se"
+
+		[params.aside.button]
+			text = "Download now"
+			link = "//github.com/digitalcraftsman/hugo-creative-theme"
+
+	# Contact section
+	[params.contact]
+		headline = "Entre em contato"
+		description = ""
+		phone = "(014) 0000-0000"
+		phone2 = "000000000000"
+		mobile = "(014) 000000-0000"
+		mobile2 = "000000000000"
+		email2= "Confira novidades em nossa página!"
+		email = "https://www.facebook.com/estancianatureza"
+		addressLat = "-21.673540761408965, -49.746617297850776"
+		address = "Lins - SP"
+
+
+    # Aside section
+	[params.informacoes]
+		headline = "Perguntas Frequentes"
+		informacao_session = "Informações"
+		preco_session = "Valores"
+		menu_session = "Menu"
+	#tooltips
+		[params.tooltips]
+		pernoite = """23:00 às 12:00, segunda à quinta 
+01:00 às 12:00, sexta, sábado e véspera de feriado"""
+		adicional = """Adicional de meia hora para o período"""
+		periodo = """4 horas, entrada entre 7:00 e 16:00
+3 horas, entrada até 17:00
+2 horas após 17:00"""
