@@ -1,7 +1,7 @@
 baseurl = "/"
 languageCode = "pt-br"
 title = "Estância Natureza"
-theme = "hugo-creative-theme"
+#theme = "hugo-creative-theme"
 
 [params]
 
